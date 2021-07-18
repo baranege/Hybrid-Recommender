@@ -7,8 +7,8 @@ pd.set_option('display.max_columns', 20)
 # Task 1: Data Processing
 
 # reading datasets
-movie = pd.read_csv("../input/movielens-20m-dataset/movie.csv")
-rating = pd.read_csv("../input/movielens-20m-dataset/rating.csv")
+movie = pd.read_csv("movielens-20m-dataset/movie.csv")
+rating = pd.read_csv("movielens-20m-dataset/rating.csv")
 df_ = movie.merge(rating, how="left", on="movieId")
 df = df_.copy()
 df.head()
