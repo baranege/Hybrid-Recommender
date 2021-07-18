@@ -48,7 +48,7 @@ movies_watched = random_user_df.columns[random_user_df.notna().any()].tolist()
 #user_movie_df.loc[user_movie_df.index == random_user, user_movie_df.columns == "Ace Ventura: Pet Detective (1994)"]
 len(movies_watched)
 
-Task 3: Finding the other users who watched the same movies
+# Task 3: Finding the other users who watched the same movies
 
 # selecting the movies that random user watched which also includes other users
 movies_watched_df = user_movie_df[movies_watched]
